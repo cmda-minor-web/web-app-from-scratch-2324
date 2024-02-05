@@ -2,8 +2,8 @@
 
 In dit vak gaan we een web applicatie bouwen en leren hoe deze werken door zo min mogelijk libraries, frameworks of
 andere bronnen te importen (vanilla) en zoveel mogelijk het browser platform te gebruiken door middel van HTML, CSS &
-JavaScript.    
-Het eindresultaat is een modulaire, single page web app (SPA), beoordeeld op jouw niveau en eigen leerdoelen.    
+JavaScript.
+Het eindresultaat is een modulaire, single page web app (SPA), beoordeeld op jouw niveau en eigen leerdoelen.
 De bedoeling is om een web app te bouwen die data ophaalt van een externe API, deze manipuleert om te tonen in de UI van
 de App, hoe abstract dan ook.
 Je gaat bekende patterns leren toe passen bij het bouwen en testen van de applicatie voor een eigen "WebSite" en een
@@ -13,6 +13,7 @@ Daarnaast zal je tijdloze kennis opdoen over het de aard en het gebruik van data
 frameworks en de werking van het web.
 
 ## Assignment
+
 1. Bouw je eigen SPA/WebSite met externe data van een API, minimaal 1 micro interactie.
 2. Een TeamApp met een verzameling van alle losse websites van je teamleden
 
@@ -20,9 +21,9 @@ frameworks en de werking van het web.
 
 ## Program
 
-| Planning | Maandag               | Dinsdag                | Woensdag                           | Donderdag                   | Vrijdag                                   |
-|----------|-----------------------|------------------------|------------------------------------|-----------------------------|-------------------------------------------|
-|          | Kick-Off, Dev WebSite | Dev TeamApp, Workshops | Dev *, Weekly nerd                 | Dev *, Workshops            | Code review, Voortgangsgesprekken, Dev *  |
+| Planning | Maandag               | Dinsdag                | Woensdag                           | Donderdag                   | Vrijdag                                  |
+| -------- | --------------------- | ---------------------- | ---------------------------------- | --------------------------- | ---------------------------------------- |
+|          | Kick-Off, Dev WebSite | Dev TeamApp, Workshops | Dev *, Weekly nerd                 | Dev *, Workshops            | Code review, Voortgangsgesprekken, Dev * |
 |          | Dev *, Workshops      | College + Workshops    | Dev *, Weekly nerd, Deadline 23:59 | Mondeling, Weekly Nerd Blog | Reparatiegesprekken, Afsluiting, 🍻 Fest? |
 
 ## Rubric
