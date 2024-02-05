@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+    background: linear-gradient(90deg, rgba(51,238,106,1) 0%, rgba(114,131,231,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: Ailerons, "Helvetica Neue", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
