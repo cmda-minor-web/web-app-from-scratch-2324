@@ -93,7 +93,6 @@ header {
 
 ul {
     display: grid;
-    flex-wrap: wrap;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
