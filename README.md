@@ -32,12 +32,20 @@ vak te voltooien.
 Tijdens de toets wordt je mondeling overhoord en krijg je feedback over dingen die we denken dat tekort schieten en dingen die
 we denken dat een verbetering zijn op het criterium.
 
-| Deficiency | Criterion                                                                                                                                                                              | Improvement |
-|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|
-|            | *User Interface* - you design, build and test the user interface by applying interface design principles                                                                               |             |
-|            | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |             |
-|            | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html      |             |
-|            | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.                                       |             |
+TBA
+
+[//]: # ()
+[//]: # (| Deficiency | Criterion                                                                                                                                                                              | Improvement |)
+
+[//]: # (|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|)
+
+[//]: # (|            | *User Interface* - you design, build and test the user interface by applying interface design principles                                                                               |             |)
+
+[//]: # (|            | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |             |)
+
+[//]: # (|            | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html      |             |)
+
+[//]: # (|            | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.                                       |             |)
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
