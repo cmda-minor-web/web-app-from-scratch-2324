@@ -1,0 +1,24 @@
+#profileInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#profileInfoContainer>* {
+  flex: 1;
+  min-width: 200px;
+}
+
+#profilePicture>img {
+  width: 50%;
+}
+
+#infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infoBox>ul {
+  text-align: start;
+}

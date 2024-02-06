@@ -1,9 +1,8 @@
 // Styling
 import '/assets/css/main.css'
-import '/assets/css/loading.css'
 
 // HTML assets
-import {renderHeader} from '/assets/js/header.js'
+import {renderHeader} from '/assets/js/header'
 import { renderProfilePicure, setProfilePicture } from './assets/js/profilePicture';
 import {
   fillContent,
@@ -13,7 +12,7 @@ import {
 import { renderTeamBox } from "/assets/js/team";
 
 // JS assets
-import { getMyData } from "/assets/js/api.js";
+import { getMyData } from "/assets/js/api";
 
 // Render the app
 document.querySelector("#app").innerHTML = `

@@ -1,0 +1,14 @@
+#team-pokemon-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#team-pokemon-box>article {
+  min-width: 100px;
+  max-width: 200px;
+}
+
+#team-pokemon-box>article>img {
+  width: 100%;
+}
