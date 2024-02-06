@@ -3,14 +3,14 @@ import '/assets/css/main.css'
 import '/assets/css/loading.css'
 
 // HTML assets
-import {renderHeader} from '/assets/html/header.js'
-import { renderProfilePicure, setProfilePicture } from './assets/html/profilePicture';
+import {renderHeader} from '/assets/js/header.js'
+import { renderProfilePicure, setProfilePicture } from './assets/js/profilePicture';
 import {
   fillContent,
   renderInfoBox,
   setInfoBoxContent,
-} from "./assets/html/infoBox";
-import { renderTeamBox } from "/assets/html/team";
+} from "./assets/js/infoBox";
+import { renderTeamBox } from "/assets/js/team";
 
 // JS assets
 import { getMyData } from "/assets/js/api.js";

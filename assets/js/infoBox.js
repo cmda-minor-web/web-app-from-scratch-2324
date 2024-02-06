@@ -15,9 +15,9 @@ ${renderContent(content)}
 
 export const fillContent = (trainerName, age, description) => {
   return [
-    {title: 'Naam', value: trainerName ?? 'Laden...'},
-    {title: 'Leeftijd', value: age ?? 'Laden...'},
-    {title: 'Omschrijving', value: description ?? 'Laden...'}
+    {title: 'Name', value: trainerName ?? 'Loading...'},
+    {title: 'Age', value: age ?? 'Loading...'},
+    {title: 'Description', value: description ?? 'Loading...'}
   ]
 }
 

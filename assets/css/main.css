@@ -55,7 +55,7 @@ header > div > img {
   min-width: 200px;
 }
 
-#profilePicture {
+#profilePicture > img {
   width: 50%;
 }
 

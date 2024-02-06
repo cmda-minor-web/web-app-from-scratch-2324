@@ -5,9 +5,9 @@ ${pokemon?.image ? `<img src="${pokemon.image}" alt="${pokemon.name}" />` : load
 `
 
 export const renderPokemon = (pokemon) => `
-<h3>${pokemon?.name ?? "Laden..."}</h3>
+<h3>${pokemon?.name ?? "Loading..."}</h3>
   ${pokemonImg(pokemon)}
-  <p>${pokemon?.description ?? "Laden..."}</p>
+  <p>${pokemon?.description ?? "Loading..."}</p>
 `;
 
 export const renderPokemonCard = (id) => `

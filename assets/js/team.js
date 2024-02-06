@@ -1,5 +1,5 @@
 import {renderPokemonCard, setPokemonCard} from './pokemon.js'
-import { fetchPokemon } from '../js/api.js';
+import { fetchPokemon } from './api.js';
 
 const loadPokemon = async (id) => {
   const pokemon = await fetchPokemon(id)
