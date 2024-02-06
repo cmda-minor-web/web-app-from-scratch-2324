@@ -62,32 +62,6 @@ header {
     grid-template-rows: 2fr 1fr;
     place-items: center;
     margin: 0;
-
-    &:before {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        left: 30%;
-        top: 10%;
-        width: 5%;
-        aspect-ratio: 1;
-        background: radial-gradient(circle, var(--yellow) 35%, var(--green-alt) 50%, transparent 70%);
-        filter: blur(10px);
-        animation: orbit 30s ease-in-out alternate infinite;
-    }
-
-    :after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        right: 30%;
-        top: 10%;
-        width: 5%;
-        aspect-ratio: 1;
-        background: radial-gradient(circle, var(--green) 35%, var(--blue) 50%, transparent 70%);
-        filter: blur(10px);
-        animation: orbit 25s ease-in-out alternate-reverse infinite;
-    }
 }
 
 
@@ -180,16 +154,4 @@ footer {
     width: 100%;
     padding: 2rem;
     color: darkgray;
-}
-
-
-@keyframes orbit {
-    from{
-        top: 30%;
-        left: 40%;
-    }
-    to {
-        top: 10%;
-        left: 55%;
-    }
 }
