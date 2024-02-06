@@ -1,0 +1,28 @@
+{
+  "avatar": "https://avatars.githubusercontent.com/u/46671786?v=4",
+  "name": "Manoah",
+  "age": 23,
+  "favoritePokemon": "Bulbasaur",
+  "favoritePokemonAvatar": "https",
+  "description": "This is me.",
+  "stats": [
+    { "title": "HTML", "value": 100 },
+    { "title": "CSS", "value": 80 },
+    { "title": "JavaScript", "value": 70 },
+    { "title": "Design", "value": 60 },
+    { "title": "Git", "value": 90 }
+  ],
+  "strengths": [
+    "Creativity",
+    "Problem-solving",
+    "Teamwork",
+    "Adaptability",
+    "Leadership"
+  ],
+  "weaknesses": ["Procrastination", "Impatience"],
+  "habitat": [
+    { "title": "Home", "value": "Alkmaar" },
+    { "title": "GitHub", "value": "https://github.com/mtdvlpr" },
+    { "title": "LinkedIn", "value": "https://www.linkedin.com/in/manoaht/" }
+  ]
+}
