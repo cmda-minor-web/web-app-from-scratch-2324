@@ -4,7 +4,7 @@
   "age": 23,
   "favoritePokemon": "Bulbasaur",
   "favoritePokemonAvatar": "https",
-  "description": "I'm an enthusiastic and passionate front-end developer.",
+  "description": "I'm an enthusiastic and passionate full-end developer.",
   "stats": [
     { "title": "HTML", "value": 100 },
     { "title": "CSS", "value": 70 },
@@ -13,10 +13,10 @@
     { "title": "Git", "value": 90 }
   ],
   "strengths": [
-    "Problem-solving",
-    "Adaptability"
+    "problem-solving",
+    "adaptability"
   ],
-  "weaknesses": ["Procrastination", "Perfectionism"],
+  "weaknesses": ["procrastination", "perfectionism"],
   "habitats": [
     { "title": "Home", "value": "Alkmaar" },
     { "title": "GitHub", "value": "https://github.com/mtdvlpr" },
