@@ -1,5 +1,6 @@
 // Styling
 import '/assets/css/main.css'
+import '/assets/css/loading.css'
 
 // HTML assets
 import {renderHeader} from '/assets/html/header.js'
@@ -9,6 +10,7 @@ import {
   renderInfoBox,
   setInfoBoxContent,
 } from "./assets/html/infoBox";
+import { renderTeamBox } from "/assets/html/team";
 
 // JS assets
 import { getMyData } from "/assets/js/api.js";
@@ -21,6 +23,7 @@ document.querySelector("#app").innerHTML = `
       ${renderProfilePicure()}
       ${renderInfoBox(fillContent())}
     </div>
+    ${renderTeamBox([1, 2, 3, 4, 5, 6])}
   </main>
 `;
 

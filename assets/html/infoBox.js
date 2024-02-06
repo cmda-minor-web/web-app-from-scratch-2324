@@ -1,9 +1,11 @@
-const renderInfoItem = (title, value) => `<p>${title}: ${value}</p>`
+const renderInfoItem = (title, value) => `<li>${title}: ${value}</li>`
 
 const renderContent = (content) => `
 <h2>Info</h2>
+<ul>
 ${content.map(({ title, value }) => renderInfoItem(title, value)).join("")}
-`
+</ul>
+`;
 
 export const renderInfoBox = (content) => `
 <article id="infoBox">

@@ -16,6 +16,7 @@
 body {
   margin: 0;
   display: flex;
+  box-sizing: border-box;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -31,14 +32,28 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-header img {
+header > * {
+  flex: 1;
+  min-width: 200px;
+}
+
+header > div > img {
   width: 50%;
 }
 
 #profileInfoContainer {
-  display: flex;;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#profileInfoContainer > * {
+  flex: 1;
+  min-width: 200px;
 }
 
 #profilePicture {
@@ -46,8 +61,28 @@ header img {
 }
 
 #infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infoBox > ul {
   text-align: start;
-  padding: 0 2rem;
+}
+
+#team-pokemon-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#team-pokemon-box > article {
+  min-width: 100px;
+  max-width: 200px;
+}
+
+#team-pokemon-box > article > img {
+  width: 100%;
 }
 
 h1 {

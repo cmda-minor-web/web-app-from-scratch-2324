@@ -22,3 +22,5 @@
 - Streaming service
 - kies je profiel/persoon
 - Je eigen top 10
+
+https://loading.io/css/
