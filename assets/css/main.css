@@ -2,6 +2,7 @@
 @import url('./loading');
 @import url('./profileInfo');
 @import url('./team');
+@import url('./statsHabitats');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -32,6 +33,10 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+ul {
+  margin: 0 0;
 }
 
 a {

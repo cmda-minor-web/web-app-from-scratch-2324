@@ -1,7 +1,7 @@
 // Styling
 import '/assets/css/main.css'
 
-// HTML assets
+// JS assets
 import {renderHeader} from '/assets/js/header'
 import { renderProfilePicure, setProfilePicture } from './assets/js/profilePicture';
 import {
@@ -10,9 +10,9 @@ import {
   setInfoBoxContent,
 } from "./assets/js/infoBox";
 import { renderTeamBox } from "/assets/js/team";
-
-// JS assets
-import { getMyData } from "/assets/js/api";
+import { fetchMyData } from "/assets/js/api";
+import { renderStatsBox, setStats } from './assets/js/stats';
+import { renderHabitatBox, setHabitats } from './assets/js/habitats';
 
 // Render the app
 document.querySelector("#app").innerHTML = `
@@ -22,15 +22,21 @@ document.querySelector("#app").innerHTML = `
       ${renderProfilePicure()}
       ${renderInfoBox(fillContent())}
     </div>
+    <div id="statsHabitatsContainer">
+      ${renderStatsBox([])}
+      ${renderHabitatBox([])}
+    </div>
     ${renderTeamBox([1, 2, 3, 4, 5, 6])}
   </main>
 `;
 
 // Load my json data in the app
 const loadMyData = async () => {
-  const data = await getMyData()
+  const data = await fetchMyData()
   setProfilePicture(data.avatar)
-  setInfoBoxContent(fillContent(data.name, data.age, data.description));
+  setInfoBoxContent(fillContent(data));
+  setStats(data.stats);
+  setHabitats(data.habitats);
 }
 
 loadMyData();

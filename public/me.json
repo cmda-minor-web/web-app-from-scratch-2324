@@ -4,23 +4,20 @@
   "age": 23,
   "favoritePokemon": "Bulbasaur",
   "favoritePokemonAvatar": "https",
-  "description": "This is me.",
+  "description": "I'm an enthusiastic and passionate front-end developer.",
   "stats": [
     { "title": "HTML", "value": 100 },
-    { "title": "CSS", "value": 80 },
-    { "title": "JavaScript", "value": 70 },
+    { "title": "CSS", "value": 70 },
+    { "title": "JavaScript", "value": 80 },
     { "title": "Design", "value": 60 },
     { "title": "Git", "value": 90 }
   ],
   "strengths": [
-    "Creativity",
     "Problem-solving",
-    "Teamwork",
-    "Adaptability",
-    "Leadership"
+    "Adaptability"
   ],
-  "weaknesses": ["Procrastination", "Impatience"],
-  "habitat": [
+  "weaknesses": ["Procrastination", "Perfectionism"],
+  "habitats": [
     { "title": "Home", "value": "Alkmaar" },
     { "title": "GitHub", "value": "https://github.com/mtdvlpr" },
     { "title": "LinkedIn", "value": "https://www.linkedin.com/in/manoaht/" }

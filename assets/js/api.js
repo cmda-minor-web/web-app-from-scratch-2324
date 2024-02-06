@@ -1,5 +1,5 @@
 // Fetch json data from root of the app
-export async function getMyData() {
+export async function fetchMyData() {
   try {
     const response = await fetch('./me.json')
     return await response.json()

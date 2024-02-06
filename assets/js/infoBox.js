@@ -1,7 +1,7 @@
 const renderInfoItem = (title, value) => `<li>${title}: ${value}</li>`
 
 const renderContent = (content) => `
-<h2>Info</h2>
+<h2>Trainer Info</h2>
 <ul>
 ${content.map(({ title, value }) => renderInfoItem(title, value)).join("")}
 </ul>
@@ -13,11 +13,13 @@ ${renderContent(content)}
 </article>
 `;
 
-export const fillContent = (trainerName, age, description) => {
+export const fillContent = (info) => {
   return [
-    {title: 'Name', value: trainerName ?? 'Loading...'},
-    {title: 'Age', value: age ?? 'Loading...'},
-    {title: 'Description', value: description ?? 'Loading...'}
+    {title: 'Name', value: info?.name ?? 'Loading...'},
+    {title: 'Age', value: info?.age ?? 'Loading...'},
+    {title: 'Strengths', value: info?.strengths?.join(', ') ?? 'Loading...'},
+    {title: 'Weaknesses', value: info?.weaknesses?.join(', ') ?? 'Loading...'},
+    {title: 'Description', value: info?.description ?? 'Loading...'},
   ]
 }
 

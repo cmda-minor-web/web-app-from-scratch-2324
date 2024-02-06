@@ -1,0 +1,24 @@
+#statsHabitatsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#statsHabitatsContainer>* {
+  flex: 1;
+  min-width: 200px;
+}
+
+#stats-container,
+#habitat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+
+#stats-container > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
