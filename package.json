@@ -10,5 +10,6 @@
   },
   "devDependencies": {
     "vite": "^5.0.12"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }
