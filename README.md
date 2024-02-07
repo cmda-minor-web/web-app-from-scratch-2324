@@ -16,6 +16,7 @@ frameworks en de werking van het web.
 1. Bouw je eigen SPA/WebSite met externe data van een API, minimaal 1 micro interactie.
 2. Een TeamApp met een verzameling van alle losse websites van je teamleden
 
+
 ---
 
 ## Program
@@ -24,6 +25,11 @@ frameworks en de werking van het web.
 |----------|-----------------------|------------------------|------------------------------------|-----------------------------|-------------------------------------------|
 |          | Kick-Off, Dev WebSite | Dev TeamApp, Workshops | Dev *, Weekly nerd                 | Dev *, Workshops            | Code review, Voortgangsgesprekken, Dev *  |
 |          | Dev *, Workshops      | College + Workshops    | Dev *, Weekly nerd, Deadline 23:59 | Mondeling, Weekly Nerd Blog | Reparatiegesprekken, Afsluiting, 🍻 Fest? |
+
+
+[Kick-off presentatie](./course/WAFS-1.Kick-off.pdf)
+
+
 
 ## Rubric
 
