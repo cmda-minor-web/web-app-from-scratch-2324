@@ -28,6 +28,8 @@ frameworks en de werking van het web.
 
 
 [Kick-off presentatie](./course/WAFS-1.Kick-off.pdf)
+[JavaScript presentatie](./course/WAFS-2.Javascript.pdf)
+[presentatie UI stack](./course/WAFS-3.UI-stack.pdf)
 
 
 
