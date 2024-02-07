@@ -3,3 +3,4 @@
 ### 05/02/2024
 - Tabel met teams en beschrijving toegevoegd
 - Overzicht pagina basic styling gegeven
+- WAFS Kick-off pres toegevoegd
