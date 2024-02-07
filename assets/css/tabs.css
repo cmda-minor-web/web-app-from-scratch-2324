@@ -1,0 +1,36 @@
+[role=tablist] {
+  display: none;
+  margin-bottom: 16px;
+}
+
+button[aria-selected=true] {
+  border-color: #646cff;
+}
+
+@media screen and (max-width: 500px) {
+  #profileInfoContainer, #stats, #habitats, #team {
+    display: none;
+  }
+
+  #profileInfoContainer.active-tab,
+  #stats.active-tab,
+  #habitats.active-tab,
+  #team.active-tab {
+    display: block;
+    animation: fade 1s ease-in-out;
+  }
+
+  [role=tablist] {
+    display: block;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

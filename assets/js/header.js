@@ -5,6 +5,6 @@ export const renderHeader = () => `
 <div>
 <img src="${pokemonLogo}" alt="Pokémon logo" />
 </div>
-<h1>Trainer Overview</h1>
+<h1 id="title">Trainer Overview</h1>
 </header>
 `;

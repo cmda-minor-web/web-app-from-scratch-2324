@@ -14,7 +14,7 @@ const renderPokemon = (id) => {
 const renderTeam = (team) => `
 <h2>My Team</h2>
 <div id="team-pokemon-box">
-${team.map((id) => renderPokemon(id)).join("")}
+${team.map(renderPokemon).join("")}
 </div>
 `;
 

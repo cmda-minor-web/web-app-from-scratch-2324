@@ -3,6 +3,7 @@
 @import url('./profileInfo');
 @import url('./team');
 @import url('./statsHabitats');
+@import url('./tabs');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
