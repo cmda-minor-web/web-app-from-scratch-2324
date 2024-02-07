@@ -20,7 +20,7 @@ document.querySelector("#app").innerHTML = `
   ${renderHeader()}
   <main>
     ${renderTabList(fillTabs())}
-    <div id="profileInfoContainer">
+    <div id="profileInfoContainer" class="active-tab">
       ${renderProfilePicure()}
       ${renderInfoBox(fillContent())}
     </div>

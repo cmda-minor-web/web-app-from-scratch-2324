@@ -1,5 +1,5 @@
 const renderTab = (tab) => `
-<button id="tab-${tab.id}" type="button" role="tab" aria-selected="${tab.active}" aria-controls="${tab.box}" tabindex="-1">
+<button id="tab-${tab.id}" type="button" role="tab" aria-selected="${tab.active}" aria-controls="${tab.box}">
 ${tab.title}
 </button>
 `;
