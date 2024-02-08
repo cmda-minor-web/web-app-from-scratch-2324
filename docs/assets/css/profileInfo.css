@@ -4,13 +4,17 @@
   justify-content: center;
 }
 
-#profileInfoContainer>* {
+#profileInfoContainer > * {
   flex: 1;
   min-width: 200px;
 }
 
-#profilePicture>img {
+#profilePicture > img {
   width: 50%;
+}
+
+#profilePicture > img.skeleton {
+    height: 100%;
 }
 
 #infoBox {
@@ -19,6 +23,6 @@
   align-items: center;
 }
 
-#infoBox>ul {
+#infoBox ul {
   text-align: start;
 }

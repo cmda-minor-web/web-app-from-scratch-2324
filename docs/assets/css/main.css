@@ -1,9 +1,9 @@
-@import url('./header');
-@import url('./loading');
-@import url('./profileInfo');
-@import url('./team');
-@import url('./statsHabitats');
-@import url('./tabs');
+@import url('./header.css');
+@import url('./profileInfo.css');
+@import url('./team.css');
+@import url('./statsHabitats.css');
+@import url('./tabs.css');
+@import url('./skeleton.css');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

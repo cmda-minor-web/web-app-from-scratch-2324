@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/pokemon.svg" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script type="importmap">
+      {
+        "imports": {
+          "api": "/web-app-from-scratch-2324/assets/js/api.js",
+          "profile": "/web-app-from-scratch-2324/assets/js/profile.js",
+          "loading": "/web-app-from-scratch-2324/assets/js/loading.js",
+          "info": "/web-app-from-scratch-2324/assets/js/info.js",
+          "stats": "/web-app-from-scratch-2324/assets/js/stats.js",
+          "habitats": "/web-app-from-scratch-2324/assets/js/habitats.js",
+          "team": "/web-app-from-scratch-2324/assets/js/team.js",
+          "tabs": "/web-app-from-scratch-2324/assets/js/tabs.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
+
+    <!-- Title and base URL -->
+    <title>Pokemon trainer - Manoah</title>
+    <base href="/web-app-from-scratch-2324/" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div>
+          <img src="assets/img/pokemon.svg" alt="Pokémon logo" />
+        </div>
+        <h1 id="title">Trainer Overview</h1>
+      </header>
+      <main>
+        <!-- Tabs for mobile version -->
+        <div role="tablist" aria-labelledby="title">
+          <button
+            id="tab-1"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="profileInfoContainer"
+          >
+            Profile
+          </button>
+          <button
+            id="tab-2"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="stats"
+          >
+            Stats
+          </button>
+          <button
+            id="tab-3"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="habitats"
+          >
+            Habitats
+          </button>
+          <button
+            id="tab-4"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="team"
+          >
+            Team
+          </button>
+        </div>
+
+        <!-- Profile picture and info article -->
+        <div id="profileInfoContainer" class="active-tab">
+          <div id="profilePicture">
+            <img class="skeleton" alt="" height="200px" width="200px" />
+          </div>
+          <article id="infoBox">
+            <h2>Trainer Info</h2>
+            <div id="infoContainer">
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Stats and habitats article -->
+        <div id="statsHabitatsContainer">
+          <article id="stats">
+            <h2>Stats</h2>
+            <div id="stats-container">
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+            </div>
+          </article>
+          <article id="habitats">
+            <h2>Habitats</h2>
+            <div id="habitat-container">
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+              <div class="skeleton skeleton-text skeleton-text__body"></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Team section with Pokemon articles -->
+        <section id="team">
+          <h2>My Team</h2>
+          <div id="team-pokemon-box"></div>
+        </section>
+      </main>
+    </div>
+    <template id="card-template">
+      <article class="pokemon-card skeleton">
+        <h3><div class="skeleton skeleton-text"></div></h3>
+        <img class="skeleton" alt="" height="200px" width="200px" />
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text skeleton-text__body"></div>
+      </article>
+    </template>
+  </body>
+</html>

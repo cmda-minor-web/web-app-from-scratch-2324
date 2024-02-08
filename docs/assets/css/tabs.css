@@ -21,7 +21,10 @@ button[aria-selected=true] {
   }
 
   [role=tablist] {
-    display: block;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

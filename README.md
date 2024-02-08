@@ -30,3 +30,5 @@ To run this project locally, you can clone the repository and use the following 
 - [Loading Indicator](https://loading.io/css/)
 - [Accessible tabs](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/examples/tabs-manual/)
 - [Animation](https://erikmartinjordan.com/display-none-display-block)
+- [Template tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
+- [Skeleton loaders](https://www.freecodecamp.org/news/how-to-build-skeleton-screens-using-css-for-better-user-experience/)

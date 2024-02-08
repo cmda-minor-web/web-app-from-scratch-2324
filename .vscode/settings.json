@@ -1,0 +1,21 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.ignorePaths": [
+    ".vscode",
+    ".yarnrc.yml",
+    "LICENSE",
+    "node_modules",
+    "yarn.lock"
+  ],
+  "cSpell.enabled": true,
+  "cSpell.language": "en,nl",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "liveServer.settings.root": "/docs",
+  "liveServer.settings.mount": [["/web-app-from-scratch-2324/", "./docs"]],
+  "cSpell.words": ["noreferrer"]
+}
