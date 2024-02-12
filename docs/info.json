@@ -1,0 +1,11 @@
+{
+    "firstName": "Basmart",
+    "lastName": "Mooleneeuw",
+    "avatar_url": "https://assets.lastdodo.com/image/ld_medium/plain/assets/catalog/assets/2014/4/23/9/7/1/pdf_971b2168-cac3-11e3-9307-de7fae688ae5.jpg",
+    "age": 173,
+    "city": "Ergenshuizen",
+    "hobbies" : ["Films", "Music", "Art", "Gaming", "Bret Pid"],
+    "truthsAndLies" : ["Ik heb rood haar", "Ik hou van vis", "Mijn partner is een beroemd persoon"],
+    "bio" : "(optioneel)",
+    "favouriteAnimal" : "(optioneel)"
+}
