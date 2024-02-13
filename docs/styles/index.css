@@ -1,9 +1,7 @@
-@import url("./content-grid.css");
-
-
 :root {
     --background: #000;
     --foreground: #fff;
+    --padding-inline: 2rem;
     --layer: 255 255 255;
     --layer-1: rgb(var(--layer)/ .05);
     --layer-2: rgb(var(--layer)/ .07);
@@ -21,24 +19,30 @@ html {
 }
 
 * {
+    list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 h1 {
-    height: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 1rem;
-    justify-content: center;
+    transition: font-size 0.2s ease-in-out;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+    padding-inline: var(--padding-inline);
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (min-width: 600px) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    margin-bottom: 1rem;
 }
 
 
@@ -53,6 +57,15 @@ a {
     }
 }
 
+[data-teams] > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+li {
+    width: 100%;
+}
 
 header {
     position: relative;
@@ -62,29 +75,66 @@ header {
     grid-template-rows: 2fr 1fr;
     place-items: center;
     margin: 0;
+    height: 500px;
+    gap: 2rem;
 }
 
 
-ul {
+main {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [main-start] minmax(0, 1200px) [main-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+
+    & > * {
+        grid-column: main;
+    }
 }
 
-li {
+article section {
+    display: grid;
+    background: #2c2c2c;
+    padding: 1rem;
+}
+
+article ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+
+footer {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem;
+    color: darkgray;
+}
+
+article {
+    width: 100%;
     transition-property: box-shadow, transform, border-color;
     transition-duration: .15s;
     transition-timing-function: ease-in-out;
     display: grid;
-    place-items: center;
     gap: 1rem;
     padding: 1rem;
-    max-width: max-content;
     background: var(--layer-1);
     border-radius: 2px;
     box-shadow: 0 0 5px rgb(0 0 0 / .6);
     position: relative;
     border: 1px solid;
+    transition: transform 0.2s ease;
+    background: #1a1a1a;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    > a::after {
+        position: absolute;
+        content: "";
+        inset: 0;
+    }
 
     &:nth-child(3n+3) {
         border-color: rgb(from var(--yellow) r g b / .2);
@@ -126,32 +176,4 @@ li {
         transform: translateY(-2px);
         box-shadow: 0 0 15px rgb(0 0 0 / .4);
     }
-}
-
-
-li img {
-    aspect-ratio: 1;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-li a {
-    &:focus {
-        outline: none;
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-    }
-}
-
-
-footer {
-    display: inline-flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 2rem;
-    color: darkgray;
 }
