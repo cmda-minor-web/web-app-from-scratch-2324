@@ -33,16 +33,68 @@ frameworks en de werking van het web.
 
 
 
-## Rubric
+## Beoordeling
 
-Je inzet wordt beoordeeld met behulp van de rubric (zie hieronder). Je moet het criterium (middenkolom) behalen om het
+Je inzet wordt beoordeeld met behulp van het beoordelingsformulier (zie hieronder). Je moet het criterium (middenkolom) behalen om het
 vak te voltooien.
 Tijdens de toets wordt je mondeling overhoord en krijg je feedback over dingen die we denken dat tekort schieten en dingen die
 we denken dat een verbetering zijn op het criterium.
 
-TBA
+### Deel 1 - Voorwaarden
+#### Je persoonlijke app
+- is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
+- bevat diverse content,
+- bevat minimaal één tot in detail uitgewerkte micro-interactie (met JS),
+- bevat minimaal één data-connectie (API call),
+- bevat de juiste data voor integratie met de team app,
+- is toegankelijk,
+- heeft een professionele vormgeving (en styling),
+- is volledig responsive,
+- is gedocumenteerd.
+#### De team app
+- is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
+- bevat content via een data-connectie met de persoonlijke app,
+- bevat minimaal één tot in detail uitgewerkte micro-interactie (met JS),
+- bevat de juiste data voor integratie met de WAFS app,
+- is toegankelijk,
+- heeft een professionele vormgeving (en styling),
+- is volledig responsive,
+- is gedocumenteerd.
+#### Oplevering:
+- Je website met procesverslag staat tijdig online op GitHub (en in een zip
+op DLO) en is daar zonder technische problemen te zien.
+- Verwijzingen naar benodigde bestanden (assets) werken.
+- De website werkt op een desktop/laptop én op een telefoon.
+- Je code is verzorgd en leesbaar. Netjes ingesprongen, van commentaar
+voorzien, etc.
+#### Proces:
+- Je hebt je vorderingen besproken en je proces vastgelegd in je verslag.
+- Je procesverslag bevat verslagen van de toegankelijkheidstesten.
+- Je demonstreert de toegankelijkheid tijdens het eindgesprek.
+- Je vermeldt gebruikte bronnen in je procesverslag.
+#### Begrip:
+- Je kunt je code en keuzes uitleggen in het eindgesprek.
+
+### Deel 2 – Beoordeling
+#### Voor een hoger cijfer:
+- Groot begrip tonen van de scope en mogelijkheden – weldoordachte
+- en onderbouwde keuzes maken voor het toepassen van bepaalde technieken.
+- Elegante, onderhoudbare en uitbreidbare code schrijven.
+- Code die werkt in meerdere browsers – waarbij je progressive enhancement passend inzet.
+- Veel resultaat bereiken met weinig code. Zelfde resultaat bereiken met minder code.
+- Performance optimaliseren.
+- Verfijnde, vernuftige en/of unieke interactie.
+- Meerdere vormen van input ondersteunen.
+- Inhoud, vorm en interactie versterken elkaar.
+- Oog voor grote geheel en voor corresponderende ieniemienie details.
+- Experimenten en randomness floreren.
+- 
+#### Beoordeling
+- __Indien aan basisvoorwaarden voldaan => voldoende en cijfer bepalen__
+- __Indien niet aan basisvoorwaarden voldoen =>1 (deel 2 is niet relevant)__
 
 ## Teams
+
 | Team              | Thema         | Leden                                   | Data                                                |
 |-------------------|---------------|-----------------------------------------|-----------------------------------------------------|
 | Eendjes           | Eendjes       | Kevin, Quinten, Justin, Lars            | Alles is eenden gerelateerd, favo vijver            |
@@ -54,19 +106,6 @@ TBA
 |                   | Huisdieren    | Stephan, Nicole, Stef, Mitchel          | Eigen huisdier, favo dieren                         |
 |                   | Muziek        | Karenza, Xiao Nan, Max, Hidde           | Emojis, top genres, top artiesten                   |
 | Heroes & Villains | Films         | Tristan, Bart, Ferhat, Klaudia, Martijn | Favo films, favo acteurs, genres, karakters         |
-
-[//]: # ()
-[//]: # (| Deficiency | Criterion                                                                                                                                                                              | Improvement |)
-
-[//]: # (|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|)
-
-[//]: # (|            | *User Interface* - you design, build and test the user interface by applying interface design principles                                                                               |             |)
-
-[//]: # (|            | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |             |)
-
-[//]: # (|            | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html      |             |)
-
-[//]: # (|            | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.                                       |             |)
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
