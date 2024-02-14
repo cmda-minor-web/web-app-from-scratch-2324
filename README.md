@@ -41,6 +41,7 @@ Tijdens de toets wordt je mondeling overhoord en krijg je feedback over dingen d
 we denken dat een verbetering zijn op het criterium.
 
 ### Deel 1 - Voorwaarden
+
 #### Je persoonlijke app
 - is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
 - bevat diverse content,
@@ -51,6 +52,7 @@ we denken dat een verbetering zijn op het criterium.
 - heeft een professionele vormgeving (en styling),
 - is volledig responsive,
 - is gedocumenteerd.
+
 #### De team app
 - is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
 - bevat content via een data-connectie met de persoonlijke app,
@@ -60,6 +62,7 @@ we denken dat een verbetering zijn op het criterium.
 - heeft een professionele vormgeving (en styling),
 - is volledig responsive,
 - is gedocumenteerd.
+
 #### Oplevering:
 - Je website met procesverslag staat tijdig online op GitHub (en in een zip
 op DLO) en is daar zonder technische problemen te zien.
@@ -67,15 +70,18 @@ op DLO) en is daar zonder technische problemen te zien.
 - De website werkt op een desktop/laptop én op een telefoon.
 - Je code is verzorgd en leesbaar. Netjes ingesprongen, van commentaar
 voorzien, etc.
+
 #### Proces:
 - Je hebt je vorderingen besproken en je proces vastgelegd in je verslag.
 - Je procesverslag bevat verslagen van de toegankelijkheidstesten.
 - Je demonstreert de toegankelijkheid tijdens het eindgesprek.
 - Je vermeldt gebruikte bronnen in je procesverslag.
+
 #### Begrip:
 - Je kunt je code en keuzes uitleggen in het eindgesprek.
 
 ### Deel 2 – Beoordeling
+
 #### Voor een hoger cijfer:
 - Groot begrip tonen van de scope en mogelijkheden – weldoordachte
 - en onderbouwde keuzes maken voor het toepassen van bepaalde technieken.
@@ -88,10 +94,10 @@ voorzien, etc.
 - Inhoud, vorm en interactie versterken elkaar.
 - Oog voor grote geheel en voor corresponderende ieniemienie details.
 - Experimenten en randomness floreren.
-- 
+
 #### Beoordeling
 - __Indien aan basisvoorwaarden voldaan => voldoende en cijfer bepalen__
-- __Indien niet aan basisvoorwaarden voldoen =>1 (deel 2 is niet relevant)__
+- __Indien niet aan basisvoorwaarden voldoen => 1 (deel 2 is niet relevant)__
 
 ## Teams
 
