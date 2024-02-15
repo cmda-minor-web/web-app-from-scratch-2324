@@ -3,6 +3,11 @@
  * @type {Element}
  */
 const container = document.querySelector('[data-teams]')
+const headers = {
+    'Accept': 'application/vnd.github.v3+json',
+    'Authorization': 'Bearer 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',
+    'X-GitHub-Api-Version': '2022-11-28'
+}
 
 /**
  * Call main function and log when initial run is done
@@ -14,6 +19,7 @@ main().then(() => console.log('Done'));
  * @returns {Promise<void>}
  */
 async function main() {
+    // renderTeams()
     const forks = await getForks();
     const teams = await mapTeamsToForks(forks)
     const teamEls = renderTeams(teams)
@@ -26,7 +32,7 @@ async function main() {
  */
 async function getForks() {
     try {
-        const res = await fetch('https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324-team/forks')
+        const res = await fetch('https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324-team/forks', {headers})
         return res.json()
     } catch (error) {
         console.error(error)
@@ -51,40 +57,56 @@ async function getTeam(team) {
     }
 }
 
+async function getContributors(team) {
+    try {
+        const res = await fetch(team.contributors_url, {headers})
+        const data = await res.json()
+        return data.filter(contributor => contributor.login !== 'bazottie' && contributor.login !== 'cmda-minor-web' && contributor.login !== 'mrtnm')
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 /**
  * Map teams to forks object
  * @param forks
  * @returns {Promise<Awaited<unknown>[]>}
  */
 async function mapTeamsToForks(forks) {
-    return await Promise.all(forks.map(async team => {
-        const teamJson = await getTeam(team)
+    return await Promise.all(forks.map(async fork => {
+        const team = await getTeam(fork)
+        const contributors = await getContributors(fork)
         return {
-            ...team, team: teamJson
+            ...fork, contributors, team
         }
     }))
 }
 
 /**
  * Render teams to the DOM
- * @param teamsForks
+ * @param forks
  * @returns {*}
  */
-function renderTeams(teamsForks) {
+function renderTeams(forks) {
     const list = document.createElement('ul');
 
-    const teamEls = teamsForks.map(fork => {
+    const teamEls = forks.map(fork => {
         const listItem = document.createElement('li')
         const article = document.createElement('article')
-        const teamName = document.createElement('h2')
-        const viewTeam = document.createElement('a')
-        console.log(fork.team.members);
-        const memberList = !!fork.team.members.length ? createMemberEls(fork.team) : undefined
-        teamName.innerText = fork.team.teamName
-        viewTeam.href = fork.homepage
-        viewTeam.innerText = 'View'
-        article.appendChild(teamName)
-        article.appendChild(viewTeam)
+        const header = document.createElement('header')
+        const heading = document.createElement('h2')
+        const memberList = !!fork.contributors.length ? renderContributors(fork.contributors) : undefined
+        heading.innerText = fork.team.teamName
+        console.log(fork.team);
+        if (fork.team.avatar_url) {
+            const avatar = document.createElement('img')
+            avatar.src = fork.team.avatar_url
+            avatar.width = 50
+            avatar.height = 50
+            header.appendChild(avatar)
+        }
+        header.appendChild(heading)
+        article.appendChild(header)
         if (memberList) {
             article.appendChild(memberList)
         }
@@ -97,38 +119,22 @@ function renderTeams(teamsForks) {
 }
 
 /**
- * Create elements to render the members of a team
+ * Create elements to render the contributors of a team
  * @param team
  * @returns {HTMLUListElement}
  */
-function createMemberEls(team) {
+function renderContributors(contributors) {
     const list = document.createElement('ul')
 
-    team.members.forEach(member => {
+    contributors.forEach(contributor => {
         const listItem = document.createElement('li')
-        const section = document.createElement('section');
-        const name = document.createElement('h3')
-        const link = document.createElement('a')
-        // const avatar = document.createElement('img')
-        // const description = document.createElement('p')
-        // const hobbyTitle = document.createElement('h4')
-        // const hobbyList = document.createElement('ul')
-
-        name.innerText = member.name
-        link.href = member.personalPage
-        link.innerText = 'View'
-        // avatar.src = member.avatar
-        // description.innerText = member.description
-        // hobbyTitle.innerText = 'Hobbies'
-
-        // member.hobbies.forEach(hobby => {
-        //     const hobbyItem = createElement('li')
-        //     hobbyItem.innerText = hobby
-        //     hobbyList.appendChild(hobbyItem)
-        // })
-
-        section.append(name, link)
-        listItem.appendChild(section)
+        const button = document.createElement('button')
+        const avatar = document.createElement('img')
+        avatar.src = contributor.avatar_url
+        avatar.width = 100
+        avatar.height = 100
+        button.appendChild(avatar)
+        listItem.appendChild(button)
         list.appendChild(listItem)
     })
     return list
