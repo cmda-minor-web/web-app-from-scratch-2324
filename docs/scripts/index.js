@@ -5,7 +5,6 @@
 const container = document.querySelector('[data-teams]')
 const headers = {
     'Accept': 'application/vnd.github.v3+json',
-    'Authorization': 'Bearer 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',
     'X-GitHub-Api-Version': '2022-11-28'
 }
 
